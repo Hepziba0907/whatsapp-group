@@ -2,14 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>My Family</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fdfbfb, #ebedee);
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Section */
+        .family-section {
+            padding: 60px 20px;
+        }
+
+        .family-section h2 {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .family-section p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* Cards */
+        .family-card {
+            border: none;
+            border-radius: 20px;
+            padding: 15px;
+            background: white;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .family-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .family-card h5 {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .family-card p:first-of-type {
+            font-weight: 500;
+            color: #764ba2;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+    </style>
 </head>
 <body>
-    <a href="https://chat.whatsapp.com/ClAL2sbWt7QJLOmrZFpQ1B?mode=gi_t" target="_blank" 
-   style="background-color:#25D366; color:white; padding:12px 20px;
-   text-decoration:none; border-radius:5px; font-weight:bold;">
-   Join WhatsApp Group
-</a>
+
+<header>
+    <h1>👨‍👩‍👧‍👦 Our Family</h1>
+    <p>Love, Care and Togetherness</p>
+</header>
+
+<section class="family-section container">
+    <div class="row text-center mb-5">
+        <h2>Family Members</h2>
+        <p class="mt-3">
+            Family is the most important part of our lives. It is where we feel safe, loved, 
+            and understood. Through every success and every challenge, we stand together 
+            and support one another. Our family teaches us values, respect, and kindness. 
+            The bond we share grows stronger with every beautiful memory we create together.
+        </p>
+    </div>
+
+    <div class="row g-4 text-center">
+
+        <div class="col-md-3">
+            <div class="card family-card">
+                <div class="card-body">
+                    <h5>Ravikumar</h5>
+                    <p>Father</p>
+                    <p>The strong support and guide of our family.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card family-card">
+                <div class="card-body">
+                    <h5>Kavitha</h5>
+                    <p>Mother</p>
+                    <p>The heart of our home filled with love and care.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card family-card">
+                <div class="card-body">
+                    <h5>Sam Joshua</h5>
+                    <p>Brother</p>
+                    <p>Brings joy and happiness to the family.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card family-card">
+                <div class="card-body">
+                    <h5>Hepziba</h5>
+                    <p>Sister</p>
+                    <p>Spreads positivity and dreams big.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="https://chat.whatsapp.com/ClAL2sbWt7QJLOmrZFpQ1B?mode=gi_t" target="_blank"
+           onclick="alert('Successfully added! Welcome to the Family Group 💖');"
+           class="whatsapp-btn">
+           Join WhatsApp Group
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Our Family | Made with ❤️</p>
+</footer>
+
 </body>
 </html>
